@@ -4,6 +4,7 @@ import { ImSpinner3 } from "react-icons/im";
 import { getPosts, handleScroll } from "../../utils";
 import { PostsGrid, PostsReels, PostsTagged } from "../../utils/icons";
 import AllPosts from "./AllPosts/AllPosts";
+
 const Posts = () => {
   const [posts, setPosts] = useState([]);
   const [page, setPage] = useState(1);
@@ -12,7 +13,7 @@ const Posts = () => {
   useEffect(() => {
     setLoading(true);
     getPosts(page).then((data) => {
-      setPosts((posts) => [...posts, ...data]);
+      setPosts((posts) => [...posts, ...data.data]);
       setLoading(false);
     });
   }, [page]);

@@ -2,7 +2,6 @@ import React from "react";
 import { Header, Posts, SideNav } from "../../components";
 import "./ViratKohli.css";
 const ViratKohli = () => {
-  
   return (
       <div id="page-container">
         <SideNav />

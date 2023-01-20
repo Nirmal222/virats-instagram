@@ -5,7 +5,7 @@ import { Info, Profile } from "./";
 const Header = () => {
   const [user, setUser] = useState({});
   useEffect(() => {
-    getUser().then((res) => setUser(res));
+    getUser().then((res) => setUser(res.data));
   }, []);
   return (
     <>

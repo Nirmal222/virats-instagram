@@ -5,16 +5,18 @@ import {memo} from "react"
 import "./SideNav.css";
 const SideNav = () => {
   return (
-    <div id="sidenav-container">
-      <div className="nav-logo">
-        <FontInsta/>
-        <Instagram />
-        <Menu />
+    <>
+      <div id="sidenav-container">
+        <div className="nav-logo">
+          <FontInsta/>
+          <Instagram />
+          <Menu />
+        </div>
+        <div id="nav-footer">
+          <More /> <p>More</p>
+        </div>
       </div>
-      <div id="nav-footer">
-        <More /> <p>More</p>
-      </div>
-    </div>
+    </>
   );
 };
 

@@ -1,4 +1,4 @@
-#sidenav-container{
+#sidenav-container {
     width: 15%;
     height: 100vh;
     position: sticky;
@@ -9,41 +9,47 @@
     justify-content: space-around;
     padding-left: 1.5%;
 }
-.nav-logo{
+
+.nav-logo {
     height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.nav-logo>svg{
+.nav-logo>svg {
     position: absolute;
     top: 6%;
     z-index: 1;
 }
-#menu-container{
+
+#menu-container {
     color: white;
 }
-#menu-container>span{
+
+#menu-container>span {
     width: 100%;
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-#nav-footer{
+
+#nav-footer {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-#nav-footer>p{
+
+#nav-footer>p {
     color: white;
 }
-.instagramIcon{
+
+.instagramIcon {
     display: none;
 }
 
-@media all and (min-width:900px) and (max-width: 1200px){
-    #sidenav-container{
+@media all and (min-width:900px) and (max-width: 1200px) {
+    #sidenav-container {
         width: 4%;
         height: 100vh;
         position: sticky;
@@ -53,25 +59,31 @@
         flex-direction: column;
         padding-left: 2%;
     }
-    #menu-container{
+
+    #menu-container {
         color: white;
         display: flex;
         flex-direction: column;
         gap: 2rem;
     }
-    #sidenav-container p{display: none}
-    .instagramIcon{
+
+    #sidenav-container p {
+        display: none
+    }
+
+    .instagramIcon {
         display: block;
     }
-    .insta{
+
+    .insta {
         display: none;
     }
 }
 
 
 
-@media all and (min-width:780px) and (max-width: 900px){
-    #sidenav-container{
+@media all and (min-width:780px) and (max-width: 900px) {
+    #sidenav-container {
         width: 4%;
         height: 100vh;
         position: sticky;
@@ -81,23 +93,29 @@
         flex-direction: column;
         padding-left: 2%;
     }
-    #menu-container{
+
+    #menu-container {
         color: white;
         display: flex;
         flex-direction: column;
         gap: 2rem;
     }
-    #sidenav-container p{display: none}
-    .instagramIcon{
+
+    #sidenav-container p {
+        display: none
+    }
+
+    .instagramIcon {
         display: block;
     }
-    .insta{
+
+    .insta {
         display: none;
     }
 }
 
-@media all and (max-width: 779px){
-    #sidenav-container{
+@media all and (max-width: 779px) {
+    #sidenav-container {
         display: none;
     }
 }

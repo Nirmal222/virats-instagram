@@ -1,7 +1,14 @@
 import React from "react";
-import { Home, Search, Explore, Reels, Messages, Notifications, Create } from "../../../utils/icons";
-import {CgProfile} from "react-icons/cg"
-import "../SideNav.css"
+import {
+  Home,
+  Search,
+  Explore,
+  Reels,
+  Messages,
+  Notifications,
+  Create,
+} from "../../../utils/icons";
+import "../SideNav.css";
 const Menu = () => {
   return (
     <div id="menu-container">

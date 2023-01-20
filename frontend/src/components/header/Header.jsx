@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { getUser } from "../../utils";
 import "./Header.css";
 import { Info, Profile } from "./";
-import MainInfo from "./Info/MainInfo";
 const Header = () => {
   const [user, setUser] = useState({});
   useEffect(() => {
@@ -28,6 +27,5 @@ const Header = () => {
     </>
   );
 };
-
 
 export default Header;

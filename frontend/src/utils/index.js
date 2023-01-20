@@ -1,3 +1,4 @@
 import { getUser } from "./getUser";
 import { getPosts } from "./getPosts";
-export { getUser, getPosts }
+import { handleScroll } from "./handleScroll";
+export { getUser, getPosts, handleScroll }

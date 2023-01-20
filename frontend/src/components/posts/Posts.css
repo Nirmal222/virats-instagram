@@ -1,43 +1,44 @@
-#posts-container{
+#posts-container {
     width: 70%;
     height: 100%;
-    border-top: 1px solid rgba(225,225,225,0.3);
+    border-top: 1px solid rgba(225, 225, 225, 0.3);
     margin: auto;
     margin-top: 2rem;
 }
 
-#postsnav{
+#postsnav {
     display: flex;
     color: white;
     width: fit-content;
     margin: auto;
     gap: 3rem;
 }
-#postsnav>span{
+
+#postsnav>span {
     display: flex;
     align-items: center;
     gap: .5rem;
 }
-#postsnav>span>svg{
+
+#postsnav>span>svg {
     font-size: 20px;
 }
 
-#allPosts-Container{
+#allPosts-Container {
     width: fit-content;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin: auto;
     gap: 5rem;
 }
 
-#post{
+#post {
     width: 100%;
-    /* border: 1px solid white; */
     margin: auto;
 }
 
-#spinner{
+#spinner {
     color: white;
     font-size: 30px;
     margin: auto;
@@ -45,43 +46,46 @@
     justify-content: center;
 }
 
-@media all and (max-width: 680px){
-    #posts-container{
+@media all and (max-width: 680px) {
+    #posts-container {
         width: 100%;
         height: 100%;
-        border-top: 1px solid rgba(225,225,225,0.3);
+        border-top: 1px solid rgba(225, 225, 225, 0.3);
         margin: auto;
         margin-top: 2rem;
     }
-    #allPosts-Container{
+
+    #allPosts-Container {
         width: fit-content;
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         margin: auto;
         gap: 5rem;
         padding: 0 2rem;
     }
 }
 
-@media all and (max-width: 480px){
-    #posts-container{
+@media all and (max-width: 480px) {
+    #posts-container {
         width: 100%;
         height: 100%;
-        border-top: 1px solid rgba(225,225,225,0.3);
+        border-top: 1px solid rgba(225, 225, 225, 0.3);
         margin: auto;
         margin-top: 2rem;
     }
-    #allPosts-Container{
+
+    #allPosts-Container {
         width: fit-content;
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(1,.8fr);
+        grid-template-columns: repeat(1, .8fr);
         margin: auto;
         gap: 5rem;
         padding: 0 2rem;
     }
-    #allPosts-Container img{
+
+    #allPosts-Container img {
         width: 100%;
     }
 }

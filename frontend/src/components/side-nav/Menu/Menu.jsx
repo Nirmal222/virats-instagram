@@ -9,6 +9,7 @@ import {
   Create,
 } from "../../../utils/icons";
 import "../SideNav.css";
+import { memo } from 'react'
 const Menu = () => {
   return (
     <div id="menu-container">
@@ -40,4 +41,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default memo(Menu);

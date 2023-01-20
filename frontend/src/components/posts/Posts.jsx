@@ -25,7 +25,19 @@ const Posts = () => {
 
   return (
     <div id="posts-container">
-      <div id="postsnav">
+      <NavPosts/>
+      <AllPosts posts={posts} />
+      {loading && <ImSpinner3 id="spinner" />}
+    </div>
+  );
+};
+
+export default Posts;
+
+
+function NavPosts(){
+  return (
+    <div id="postsnav">
         <span>
           <PostsGrid />
           <p>Posts</p>
@@ -39,10 +51,5 @@ const Posts = () => {
           <p>Tagged</p>
         </span>
       </div>
-      <AllPosts posts={posts} />
-      {loading && <ImSpinner3 id="spinner" />}
-    </div>
-  );
-};
-
-export default Posts;
+  )
+}

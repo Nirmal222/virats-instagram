@@ -1,0 +1,168 @@
+#header-container>* {
+    margin: 0%;
+}
+
+#header-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+#profile-picture {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile-picture>img {
+    border-radius: 50%;
+    border-radius: 50%;
+    background: linear-gradient(to right, rgb(255, 166, 0), purple);
+    padding: 7px;
+}
+
+#info-container {
+    width: 60%;
+}
+
+#name-followers {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#name-followers>span:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: white;
+}
+
+#name-followers>span:nth-child(1)>i>svg {
+    color: #0095f6;
+}
+
+#name-followers>span:nth-child(2) {
+    display: flex;
+    gap: 1rem;
+}
+
+#name-followers>span:nth-child(2)>button {
+    padding: .4rem .8rem;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+}
+
+#name-followers>span:nth-child(2)>button:first-child {
+    background-color: #0095f6;
+    color: white;
+}
+
+#count {
+    width: 70%;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+#details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#details>p {
+    color: white;
+}
+
+#details>p>span:nth-child(1),
+#details>p>span:last-child {
+    font-weight: bold;
+    height: fit-content;
+}
+
+#info-foot {
+    width: 100%;
+    color: white;
+    font-size: 12px;
+    margin: auto;
+}
+#smallInfo{
+    display: none;       
+}
+
+
+@media all and (max-width: 1080px) {
+    #header-container {
+        width: 100%;
+        margin: auto;
+        display: flex;
+    }
+
+    #profile-picture {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #name-followers {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #count {
+        width: 100%;
+        display: flex;
+        color: white;
+        justify-content: space-between;
+    }
+
+}
+
+@media all and (max-width: 680px) {
+    #header-container {
+        width: 100%;
+        margin: auto;
+        display: flex;
+    }
+
+    #profile-picture>img {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #name-followers {
+        width: 100%;
+        display: block;
+    }
+
+    #name-followers>span:nth-child(2)>button {
+        padding: .3rem .6rem;
+    }
+
+
+    #count {
+        display: none;
+    }
+
+    #details,#info-foot{
+        display: none;
+    }
+    #smallInfo{
+        display: block;
+        font-size: small;
+        padding-left: 7%;
+    }
+    #sdetails,#sinfo-foot{
+        display: block;
+        color: white;
+    }
+}
